@@ -1,1 +1,14 @@
 # CS-210-Project3Portfolio
+Corner Grocer Item-Tracking Program
+Project Summary and Problem Solved 
+This project was developed for the Corner Grocer to help them analyze daily purchasing trends. The program reads a daily log of purchased items from an input text file (CS210_Project_Three_Input_File.txt) and aggregates the data to determine the frequency of each item purchased. It provides a user-friendly menu to look up specific items, view a complete list of item frequencies, print a text-based histogram, and automatically back up the aggregated data to a frequencies.dat file.
+What I Did Well 
+I effectively utilized object-oriented programming principles in C++ by separating the logic into modular files (ItemTracker.h, ItemTracker.cpp, and main.cpp). Using a std::map data structure allowed highly efficient counting and storage of the grocery items, keeping the code clean and the time complexity low during file processing.
+Areas for Enhancement 
+The code could be enhanced by adding more robust input validation and exception handling. For instance, adding try-catch blocks around the file I/O operations would prevent the program from crashing if the input file is missing or corrupted. Additionally, strengthening the user menu's input validation to clear the buffer if a user inputs a char or string instead of an int would make the program more secure and prevent infinite loops.
+Most Challenging Pieces of Code 
+Integrating the language environments and handling the linking of main.cpp within the Apporto IDE presented some challenges, as did ensuring seamless file operations between the read and write functions. I overcame this by breaking the project down into smaller, testable modules and verifying the map populated correctly before building the user menu. Moving forward, I am adding C++ documentation resources (like cppreference) and structured debugging strategies to my support network.
+Transferable Skills 
+The file Input/Output (I/O) operations and cross-language integration concepts I practiced here will be highly transferable to future software development tasks. Understanding how to parse external data files, manipulate that data using maps/dictionaries, and write it back to a persistence layer is a fundamental requirement in almost all modern IT and software applications.
+Maintainability, Readability, and Adaptability 
+I ensured the program was maintainable by keeping the architecture modular. By separating the class definitions into a header file and the implementation into a .cpp file, another developer can quickly understand the class structure without digging through the logic. I also used descriptive variable names, extensive inline comments, and an intuitive menu layout so the code can be easily adapted or expanded with new features in the future.
